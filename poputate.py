@@ -9,6 +9,6 @@ def populate(n):
     for i in range(n):
         fAuthor=fake.name()
         fContent = fake.text()
-        fTitle=fake.title()
+        fTitle=fake.name()
         blog=post.objects.get_or_create(Author=fAuthor,Title=fTitle,Content=fContent)
 populate(81)
